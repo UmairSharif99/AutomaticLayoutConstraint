@@ -1,0 +1,6 @@
+framework module AutomaticLayoutConstraint {
+  umbrella header "AutomaticLayoutConstraint-umbrella.h"
+
+  export *
+  module * { export * }
+}

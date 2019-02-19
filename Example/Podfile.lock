@@ -1,0 +1,16 @@
+PODS:
+  - AutomaticLayoutConstraint (0.0.1)
+
+DEPENDENCIES:
+  - AutomaticLayoutConstraint (from `../`)
+
+EXTERNAL SOURCES:
+  AutomaticLayoutConstraint:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AutomaticLayoutConstraint: d2727928edfcdcc5d84d3edb95bf88d8a14ab13d
+
+PODFILE CHECKSUM: 6c01345819ebfc3e0cca5a602d488a910553f402
+
+COCOAPODS: 1.6.0
