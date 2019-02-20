@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var textfield: UITextField!
     @IBOutlet weak var label: UILabel!
     var isShowElementes = false
     override func viewDidLoad() {
@@ -23,11 +25,14 @@ class ViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
         isShowElementes.toggle()
         if isShowElementes {
             label.text = "some text"
+            image.image = UIImage(named: "placeholder")
         } else {
             label.text = ""
+            image.image = nil
         }
     }
 
