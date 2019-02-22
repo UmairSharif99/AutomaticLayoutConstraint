@@ -255,8 +255,13 @@ class AutomaticLayoutConstraint: NSLayoutConstraint {
             }else {
                 isObserverChangeApplied = false
             }
+        }
+        else if let objct = firstItem as? UIView{
+            if let value = objct.value(forKeyPath: keyBind_){
+                isObserverChangeApplied = false
+            }
         }else {
-            isObserverChangeApplied = false
+            isObserverChangeApplied = true
         }
     }
 }
